@@ -14,6 +14,7 @@ pipeline{
              
             steps{
                 echo "Applicatio test start"
+                sh 'node test'
                 echo"Applicatio test stop"
             }
         }
