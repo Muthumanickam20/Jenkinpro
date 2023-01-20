@@ -25,7 +25,6 @@ pipeline{
 		stage('Deploy to Prod env')
 			steps{
 				echo "Application prod Deployment Start"
-				
 				echo "Application prod Deployment End"
 			}
 		}
