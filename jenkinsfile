@@ -13,7 +13,7 @@ pipeline{
         stage('Test the Application'){
                when{
                      expression {
-                               return env.restrequired=='yes'
+                               return env.testrequired=='yes';
                      }
             }
             steps{
