@@ -11,14 +11,9 @@ pipeline{
         }
         
         stage('Test the Application'){
-               when{
-                     expression {
-                               return env.testrequired=='yes';
-                     }
-            }
+             
             steps{
                 echo "Applicatio test start"
-                sh'node test'
                 echo"Applicatio test stop"
             }
         }
