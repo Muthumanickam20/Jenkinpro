@@ -1,31 +1,29 @@
 pipeline{
-	agent any
-	stages {
-
-		stage('Build Node Js Project'){
-			steps{
-				echo "Application build Starting"			
-				echo "Application build End"
-			}
-		}
-		
-		stage('Test the Application'){
-			steps{
-				echo "Application test Start"
-				echo "Application test End"
-			}
-		}
-		
-		stage('Deploy to Dev env'){
-			steps{
-				echo "Application Deployment Start"
-				echo "Application Deployment End"
-			}
-		}
-		stage('Deploy to Prod env')
-			steps{
-				echo "Application prod Deployment Start"
-				echo "Application prod Deployment End"
-			}
-		}
-	}
+    agent any
+    stages {
+        
+        stage('Build Node Js Project'){
+            steps{
+                echo "Applicatio build start"
+                
+                echo"Applicatio build stop"
+            }
+        }
+        
+        stage('Test the Application'){
+            steps{
+                echo "Applicatio test start"
+                
+                echo"Applicatio test stop"
+            }
+        }
+        
+        stage('Deploy to Dev env'){
+            steps{
+                echo "Applicatio Deployment start"
+                
+                echo"Applicatio Deployment stop"
+            }
+        }
+    }
+}
