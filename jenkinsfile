@@ -12,7 +12,7 @@ pipeline{
         
         stage('Test the Application'){
             steps{
-                echo "Applicatio test start"
+                echo "Applicatio test starting"
                 
                 echo"Applicatio test stop"
             }
