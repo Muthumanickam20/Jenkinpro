@@ -11,6 +11,11 @@ pipeline{
         }
         
         stage('Test the Application'){
+              when{
+                     expression {
+                             return env.TestRequired=='yes';
+                             }
+                     }
              
             steps{
                 echo "Applicatio test start"
